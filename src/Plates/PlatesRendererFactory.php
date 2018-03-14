@@ -8,8 +8,8 @@ declare(strict_types=1);
 
 namespace KiwiSuite\Template\Plates;
 
-use KiwiSuite\ServiceManager\FactoryInterface;
-use KiwiSuite\ServiceManager\ServiceManagerInterface;
+use KiwiSuite\Contract\ServiceManager\FactoryInterface;
+use KiwiSuite\Contract\ServiceManager\ServiceManagerInterface;
 use League\Plates\Engine as PlatesEngine;
 use Zend\Expressive\Plates\PlatesEngineFactory;
 use Zend\Expressive\Plates\PlatesRenderer;

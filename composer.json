@@ -12,6 +12,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
+        "kiwi-suite/contract": "dev-develop",
         "zendframework/zend-expressive-platesrenderer": "^2.0.0-dev",
         "zendframework/zend-expressive-helpers": "^5.0.0-dev"
     },

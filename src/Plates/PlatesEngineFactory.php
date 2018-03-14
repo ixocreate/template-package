@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace KiwiSuite\Template\Plates;
 
-use KiwiSuite\ServiceManager\ServiceManagerInterface;
+use KiwiSuite\Contract\ServiceManager\ServiceManagerInterface;
 use League\Plates\Engine as PlatesEngine;
 use League\Plates\Extension\ExtensionInterface;
 use Psr\Container\ContainerInterface;
