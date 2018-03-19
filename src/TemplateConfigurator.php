@@ -1,4 +1,13 @@
 <?php
+/**
+ * kiwi-suite/template (https://github.com/kiwi-suite/template)
+ *
+ * @package kiwi-suite/template
+ * @see https://github.com/kiwi-suite/template
+ * @copyright Copyright (c) 2010 - 2018 kiwi suite GmbH
+ * @license MIT License
+ */
+
 declare(strict_types=1);
 namespace KiwiSuite\Template;
 
@@ -60,13 +69,13 @@ final class TemplateConfigurator implements ConfiguratorInterface
      */
     public function addDirectory(string $name, string $directory): void
     {
-        if (!is_dir($directory)) {
+        if (!\is_dir($directory)) {
             //TODO Exception
-            throw new \Exception(sprintf("template directory %s doesnt exist", $directory));
+            throw new \Exception(\sprintf("template directory %s doesnt exist", $directory));
         }
         $this->directories[$name] = [
             'name' => $name,
-            'directory' => $directory
+            'directory' => $directory,
         ];
     }
 

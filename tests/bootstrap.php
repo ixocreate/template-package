@@ -1,10 +1,10 @@
 <?php
 /**
- * kiwi-suite/database (https://github.com/kiwi-suite/template)
+ * kiwi-suite/template (https://github.com/kiwi-suite/template)
  *
  * @package kiwi-suite/template
  * @see https://github.com/kiwi-suite/template
- * @copyright Copyright (c) 2010 - 2017 kiwi suite GmbH
+ * @copyright Copyright (c) 2010 - 2018 kiwi suite GmbH
  * @license MIT License
  */
 
