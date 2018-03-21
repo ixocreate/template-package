@@ -4,9 +4,9 @@ namespace KiwiSuite\Template;
 
 use KiwiSuite\Contract\Application\ConfiguratorInterface;
 use KiwiSuite\Contract\Application\ServiceRegistryInterface;
+use KiwiSuite\Contract\Template\ExtensionInterface;
 use KiwiSuite\ServiceManager\Factory\AutowireFactory;
 use KiwiSuite\ServiceManager\SubManager\SubManagerConfigurator;
-use KiwiSuite\Template\Extension\ExtensionInterface;
 use KiwiSuite\Template\Extension\ExtensionMapping;
 use KiwiSuite\Template\Extension\ExtensionSubManager;
 
