@@ -1,4 +1,14 @@
 <?php
+/**
+ * kiwi-suite/template (https://github.com/kiwi-suite/template)
+ *
+ * @package kiwi-suite/template
+ * @see https://github.com/kiwi-suite/template
+ * @copyright Copyright (c) 2010 - 2018 kiwi suite GmbH
+ * @license MIT License
+ */
+
+declare(strict_types=1);
 namespace KiwiSuite\Template\Factory;
 
 use KiwiSuite\Contract\ServiceManager\FactoryInterface;
@@ -17,9 +27,9 @@ final class TemplateRendererFactory implements FactoryInterface
      * @param ServiceManagerInterface $container
      * @param $requestedName
      * @param array|null $options
-     * @return mixed
      * @throws \Psr\Container\ContainerExceptionInterface
      * @throws \Psr\Container\NotFoundExceptionInterface
+     * @return mixed
      */
     public function __invoke(ServiceManagerInterface $container, $requestedName, array $options = null)
     {
@@ -37,12 +47,11 @@ final class TemplateRendererFactory implements FactoryInterface
 
         $extensionMapping = $container->get(ExtensionMapping::class)->getMapping();
         foreach ($extensionMapping as $name => $extension) {
-            $plates->registerFunction($name, function (...$arguments) use ($extensionManager, $extension){
-                return call_user_func_array($extensionManager->get($extension), $arguments);
+            $plates->registerFunction($name, function (...$arguments) use ($extensionManager, $extension) {
+                return \call_user_func_array($extensionManager->get($extension), $arguments);
             });
         }
 
         return new Renderer(new PlatesRenderer($plates));
-
     }
 }
