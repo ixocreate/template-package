@@ -37,8 +37,8 @@ final class TemplateRendererFactory implements FactoryInterface
 
         $extensionMapping = $container->get(ExtensionMapping::class)->getMapping();
         foreach ($extensionMapping as $name => $extension) {
-            $plates->registerFunction($name, function ($arguments) use ($extensionManager, $name){
-                return call_user_func_array($extensionManager->get($name), $arguments);
+            $plates->registerFunction($name, function (...$arguments) use ($extensionManager, $extension){
+                return call_user_func_array($extensionManager->get($extension), $arguments);
             });
         }
 
