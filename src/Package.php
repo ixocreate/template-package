@@ -1,4 +1,13 @@
 <?php
+/**
+ * kiwi-suite/template (https://github.com/kiwi-suite/template)
+ *
+ * @package kiwi-suite/template
+ * @see https://github.com/kiwi-suite/template
+ * @copyright Copyright (c) 2010 - 2018 kiwi suite GmbH
+ * @license MIT License
+ */
+
 declare(strict_types=1);
 
 namespace KiwiSuite\Template;
@@ -32,7 +41,7 @@ final class Package implements PackageInterface
     public function getBootstrapItems(): ?array
     {
         return [
-            TemplateBootstrapItem::class
+            TemplateBootstrapItem::class,
         ];
     }
 
