@@ -32,10 +32,14 @@ final class Renderer
     /**
      * @param string $name
      * @param array $params
+     * @param array $globalData
      * @return string
      */
-    public function render(string $name, $params = []): string
+    public function render(string $name, array $params = [], array $globalData = []): string
     {
+        foreach ($globalData as $paramName => $value) {
+            $this->renderer->addDefaultParam('*', $paramName, $value);
+        }
         return $this->renderer->render($name, $params);
     }
 }

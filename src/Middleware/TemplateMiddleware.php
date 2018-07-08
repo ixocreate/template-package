@@ -49,7 +49,7 @@ final class TemplateMiddleware implements MiddlewareInterface
     private function createHtmlResponse(TemplateResponse $templateResponse): HtmlResponse
     {
         return new HtmlResponse(
-            $this->renderer->render($templateResponse->getTemplate(), $templateResponse->getData()),
+            $this->renderer->render($templateResponse->getTemplate(), $templateResponse->getData(), $templateResponse->getGlobalData()),
             $templateResponse->getStatusCode(),
             $templateResponse->getHeaders()
         );

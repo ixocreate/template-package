@@ -28,18 +28,24 @@ final class TemplateResponse extends Response
      * @var array
      */
     private $data;
+    /**
+     * @var array
+     */
+    private $globalData;
 
     /**
      * TemplateResponse constructor.
      * @param string $template
      * @param array $data
+     * @param array $globalData
      * @param int $status
      * @param array $headers
      */
-    public function __construct(string $template, array $data = [], int $status = 200, array $headers = [])
+    public function __construct(string $template, array $data = [], array $globalData = [], int $status = 200, array $headers = [])
     {
         $this->template = $template;
         $this->data = $data;
+        $this->globalData = $globalData;
         $body = new Stream('php://temp', 'r');
         parent::__construct($body, $status, $headers);
     }
@@ -55,5 +61,10 @@ final class TemplateResponse extends Response
     public function getData(): array
     {
         return $this->data;
+    }
+
+    public function getGlobalData(): array
+    {
+        return $this->globalData;
     }
 }
