@@ -7,5 +7,5 @@ nbproject
 .project
 .settings
 .php_cs.cache
-/public/assets/
-/vendor/
+/vendor
+/composer.lock
