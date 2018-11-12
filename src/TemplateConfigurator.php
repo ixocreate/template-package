@@ -9,6 +9,7 @@
  */
 
 declare(strict_types=1);
+
 namespace KiwiSuite\Template;
 
 use KiwiSuite\Contract\Application\ConfiguratorInterface;
@@ -16,6 +17,7 @@ use KiwiSuite\Contract\Application\ServiceRegistryInterface;
 use KiwiSuite\Contract\Template\ExtensionInterface;
 use KiwiSuite\ServiceManager\Factory\AutowireFactory;
 use KiwiSuite\ServiceManager\SubManager\SubManagerConfigurator;
+use KiwiSuite\Template\Exception\InvalidDirectoryException;
 use KiwiSuite\Template\Extension\ExtensionMapping;
 use KiwiSuite\Template\Extension\ExtensionSubManager;
 
@@ -70,8 +72,7 @@ final class TemplateConfigurator implements ConfiguratorInterface
     public function addDirectory(string $name, string $directory): void
     {
         if (!\is_dir($directory)) {
-            //TODO Exception
-            throw new \Exception(\sprintf("template directory %s doesnt exist", $directory));
+            throw new InvalidDirectoryException(\sprintf("template directory %s doesnt exist", $directory));
         }
         $this->directories[$name] = [
             'name' => $name,
