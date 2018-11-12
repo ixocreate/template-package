@@ -31,6 +31,7 @@ final class TemplateConfig implements SerializableServiceInterface
 
     /**
      * @return string
+     * @deprecated
      */
     public function getFileExtension(): string
     {
@@ -39,8 +40,25 @@ final class TemplateConfig implements SerializableServiceInterface
 
     /**
      * @return array
+     * @deprecated
      */
     public function getDirectories(): array
+    {
+        return $this->config['directories'];
+    }
+
+    /**
+     * @return string
+     */
+    public function fileExtension(): string
+    {
+        return $this->config['fileExtension'];
+    }
+
+    /**
+     * @return array
+     */
+    public function directories(): array
     {
         return $this->config['directories'];
     }
