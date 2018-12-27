@@ -4,8 +4,7 @@
     "license": "MIT",
     "type": "library",
     "authors": [{
-        "name": "IXOCREATE",
-        "email": "opensource@ixocreate.com"
+        "name": "IXOCREATE"
     }],
     "minimum-stability": "dev",
     "prefer-stable": true,
