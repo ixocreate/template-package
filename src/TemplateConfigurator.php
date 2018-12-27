@@ -10,16 +10,16 @@
 
 declare(strict_types=1);
 
-namespace KiwiSuite\Template;
+namespace Ixocreate\Template;
 
-use KiwiSuite\Contract\Application\ConfiguratorInterface;
-use KiwiSuite\Contract\Application\ServiceRegistryInterface;
-use KiwiSuite\Contract\Template\ExtensionInterface;
-use KiwiSuite\ServiceManager\Factory\AutowireFactory;
-use KiwiSuite\ServiceManager\SubManager\SubManagerConfigurator;
-use KiwiSuite\Template\Exception\InvalidDirectoryException;
-use KiwiSuite\Template\Extension\ExtensionMapping;
-use KiwiSuite\Template\Extension\ExtensionSubManager;
+use Ixocreate\Contract\Application\ConfiguratorInterface;
+use Ixocreate\Contract\Application\ServiceRegistryInterface;
+use Ixocreate\Contract\Template\ExtensionInterface;
+use Ixocreate\ServiceManager\Factory\AutowireFactory;
+use Ixocreate\ServiceManager\SubManager\SubManagerConfigurator;
+use Ixocreate\Template\Exception\InvalidDirectoryException;
+use Ixocreate\Template\Extension\ExtensionMapping;
+use Ixocreate\Template\Extension\ExtensionSubManager;
 
 final class TemplateConfigurator implements ConfiguratorInterface
 {

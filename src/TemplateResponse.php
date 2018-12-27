@@ -9,7 +9,7 @@
  */
 
 declare(strict_types=1);
-namespace KiwiSuite\Template;
+namespace Ixocreate\Template;
 
 use Zend\Diactoros\MessageTrait;
 use Zend\Diactoros\Response;

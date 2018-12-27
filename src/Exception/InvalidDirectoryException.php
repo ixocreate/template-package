@@ -9,7 +9,7 @@
  */
 declare(strict_types=1);
 
-namespace KiwiSuite\Template\Exception;
+namespace Ixocreate\Template\Exception;
 
 class InvalidDirectoryException extends \Exception
 {

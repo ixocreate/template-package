@@ -9,14 +9,14 @@
  */
 
 declare(strict_types=1);
-namespace KiwiSuite\Template\Factory;
+namespace Ixocreate\Template\Factory;
 
-use KiwiSuite\Contract\ServiceManager\FactoryInterface;
-use KiwiSuite\Contract\ServiceManager\ServiceManagerInterface;
-use KiwiSuite\Template\Extension\ExtensionMapping;
-use KiwiSuite\Template\Extension\ExtensionSubManager;
-use KiwiSuite\Template\Renderer;
-use KiwiSuite\Template\TemplateConfig;
+use Ixocreate\Contract\ServiceManager\FactoryInterface;
+use Ixocreate\Contract\ServiceManager\ServiceManagerInterface;
+use Ixocreate\Template\Extension\ExtensionMapping;
+use Ixocreate\Template\Extension\ExtensionSubManager;
+use Ixocreate\Template\Renderer;
+use Ixocreate\Template\TemplateConfig;
 use League\Plates\Engine;
 use Zend\Expressive\Plates\PlatesRenderer;
 

@@ -9,7 +9,7 @@
  */
 
 declare(strict_types=1);
-namespace KiwiSuite\Template;
+namespace Ixocreate\Template;
 
 use Zend\Expressive\Template\TemplateRendererInterface;
 

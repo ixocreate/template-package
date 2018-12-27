@@ -26,13 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-            "KiwiSuite\\Template\\": "src/"
+            "Ixocreate\\Template\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KiwiSuiteMisc\\Template\\": "tests/misc/",
-            "KiwiSuiteTest\\Template\\": "tests/src/"
+            "IxocreateMisc\\Template\\": "tests/misc/",
+            "IxocreateTest\\Template\\": "tests/src/"
         }
     },
     "scripts": {
