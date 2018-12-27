@@ -1,21 +1,17 @@
 {
-    "name": "kiwi-suite/template",
-    "description": "kiwi-suite/template",
+    "name": "ixocreate/template",
+    "description": "Plates integration for IXOCREATE",
     "license": "MIT",
     "type": "library",
-    "authors": [
-        {
-            "name": "Lucas Seinfeld"
-        },
-        {
-            "name": "Thomas Payer"
-        }
-    ],
+    "authors": [{
+        "name": "IXOCREATE",
+        "email": "opensource@ixocreate.com"
+    }],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "kiwi-suite/contract": "dev-develop",
+        "ixocreate/contract": "dev-develop",
         "zendframework/zend-expressive-platesrenderer": "^2.0"
     },
     "require-dev": {
