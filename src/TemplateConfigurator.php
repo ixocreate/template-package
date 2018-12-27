@@ -1,10 +1,7 @@
 <?php
 /**
- * kiwi-suite/template (https://github.com/kiwi-suite/template)
- *
- * @package kiwi-suite/template
- * @link https://github.com/kiwi-suite/template
- * @copyright Copyright (c) 2010 - 2018 kiwi suite GmbH
+ * @link https://github.com/ixocreate
+ * @copyright IXOCREATE GmbH
  * @license MIT License
  */
 
