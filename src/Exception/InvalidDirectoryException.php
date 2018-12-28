@@ -7,7 +7,8 @@
 
 declare(strict_types=1);
 
-namespace Test\Template;
+namespace Ixocreate\Template\Exception;
 
-\chdir(\dirname(__DIR__));
-include 'vendor/autoload.php';
+class InvalidDirectoryException extends \Exception
+{
+}

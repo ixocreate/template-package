@@ -4,8 +4,7 @@
     "license": "MIT",
     "type": "library",
     "authors": [{
-        "name": "IXOCREATE",
-        "email": "opensource@ixocreate.com"
+        "name": "IXOCREATE"
     }],
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -15,24 +14,23 @@
         "zendframework/zend-expressive-platesrenderer": "^2.0"
     },
     "require-dev": {
+        "ixocreate/coding-standard": "^1.0.0",
         "phpunit/phpunit": "^6.0.6",
-        "friendsofphp/php-cs-fixer": "^2.5",
         "php-coveralls/php-coveralls": "^2.0",
-        "kiwi-suite/servicemanager": "dev-develop",
-        "kiwi-suite/application": "dev-develop"
+        "ixocreate/servicemanager": "dev-develop"
     },
     "autoload": {
         "psr-4": {
-            "KiwiSuite\\Template\\": "src/"
+            "Ixocreate\\Template\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KiwiSuiteMisc\\Template\\": "tests/misc/",
-            "KiwiSuiteTest\\Template\\": "tests/src/"
+            "IxocreateMisc\\Template\\": "tests/misc/",
+            "IxocreateTest\\Template\\": "tests/src/"
         }
     },
     "scripts": {
-        "fix-cs": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix"
+        "fix-cs": "vendor/friendsofphp/php-cs-fixer/php-cs-fixer fix --config vendor/ixocreate/coding-standard/.php_cs"
     }
 }
