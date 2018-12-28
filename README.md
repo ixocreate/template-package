@@ -1,6 +1,6 @@
 # Kiwi Template
 
-[![Build Status](https://travis-ci.org/ixocreate/template.svg?branch=master)](https://travis-ci.org/ixocreate/template)
+[![Build Status](https://travis-ci.com/ixocreate/template.svg?branch=master)](https://travis-ci.com/ixocreate/template)
 [![Coverage Status](https://coveralls.io/repos/github/ixocreate/template/badge.svg?branch=develop)](https://coveralls.io/github/ixocreate/template?branch=develop)
 [![Packagist](https://img.shields.io/packagist/v/ixocreate/template.svg)](https://packagist.org/packages/ixocreate/template)
 [![Packagist Pre Release](https://img.shields.io/packagist/vpre/ixocreate/template.svg)](https://packagist.org/packages/ixocreate/template)
