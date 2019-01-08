@@ -3,9 +3,11 @@
     "description": "Plates integration for IXOCREATE",
     "license": "MIT",
     "type": "library",
-    "authors": [{
-        "name": "IXOCREATE"
-    }],
+    "authors": [
+        {
+            "name": "IXOCREATE"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
