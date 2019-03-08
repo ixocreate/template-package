@@ -1,4 +1,4 @@
-# Kiwi Template
+# IXOCREATE template
 
 [![Build Status](https://travis-ci.com/ixocreate/template.svg?branch=master)](https://travis-ci.com/ixocreate/template)
 [![Coverage Status](https://coveralls.io/repos/github/ixocreate/template/badge.svg?branch=develop)](https://coveralls.io/github/ixocreate/template?branch=develop)
