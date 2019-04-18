@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Template;
 
-use Ixocreate\Application\BootstrapItemInterface;
-use Ixocreate\Application\ConfiguratorInterface;
+use Ixocreate\Application\Bootstrap\BootstrapItemInterface;
+use Ixocreate\Application\Configurator\ConfiguratorInterface;
 
 final class TemplateBootstrapItem implements BootstrapItemInterface
 {
