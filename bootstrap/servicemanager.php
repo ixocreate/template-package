@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace Ixocreate\Template\Package;
+namespace Ixocreate\Template;
 
 use Ixocreate\ServiceManager\ServiceManagerConfigurator;
-use Ixocreate\Template\Package\Extension\ExtensionSubManager;
-use Ixocreate\Template\Package\Factory\TemplateRendererFactory;
+use Ixocreate\Template\Extension\ExtensionSubManager;
+use Ixocreate\Template\Factory\TemplateRendererFactory;
 
 /** @var ServiceManagerConfigurator $serviceManager */
 $serviceManager->addFactory(Renderer::class, TemplateRendererFactory::class);

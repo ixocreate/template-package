@@ -7,14 +7,14 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template\Package\Factory;
+namespace Ixocreate\Template\Factory;
 
 use Ixocreate\ServiceManager\FactoryInterface;
 use Ixocreate\ServiceManager\ServiceManagerInterface;
-use Ixocreate\Template\Package\Extension\ExtensionMapping;
-use Ixocreate\Template\Package\Extension\ExtensionSubManager;
-use Ixocreate\Template\Package\Renderer;
-use Ixocreate\Template\Package\TemplateConfig;
+use Ixocreate\Template\Extension\ExtensionMapping;
+use Ixocreate\Template\Extension\ExtensionSubManager;
+use Ixocreate\Template\Renderer;
+use Ixocreate\Template\TemplateConfig;
 use League\Plates\Engine;
 use Zend\Expressive\Plates\PlatesRenderer;
 

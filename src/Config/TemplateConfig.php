@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template\Package\Config;
+namespace Ixocreate\Template\Config;
 
 use Ixocreate\Application\Service\SerializableServiceInterface;
 

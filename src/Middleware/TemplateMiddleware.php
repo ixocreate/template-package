@@ -7,10 +7,10 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template\Package\Middleware;
+namespace Ixocreate\Template\Middleware;
 
-use Ixocreate\Template\Package\Renderer;
-use Ixocreate\Template\Package\TemplateResponse;
+use Ixocreate\Template\Renderer;
+use Ixocreate\Template\TemplateResponse;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;

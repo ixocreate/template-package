@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template\Package\Extension;
+namespace Ixocreate\Template\Extension;
 
 use Ixocreate\Application\Service\SerializableServiceInterface;
 
