@@ -34,14 +34,20 @@ final class TemplateResponse extends Response
 
     /**
      * TemplateResponse constructor.
+     *
      * @param string $template
      * @param array $data
      * @param array $globalData
      * @param int $status
      * @param array $headers
      */
-    public function __construct(string $template, array $data = [], array $globalData = [], int $status = 200, array $headers = [])
-    {
+    public function __construct(
+        string $template,
+        array $data = [],
+        array $globalData = [],
+        int $status = 200,
+        array $headers = []
+    ) {
         $this->template = $template;
         $this->data = $data;
         $this->globalData = $globalData;

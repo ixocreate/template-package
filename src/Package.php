@@ -9,11 +9,10 @@ declare(strict_types=1);
 
 namespace Ixocreate\Template;
 
-use Ixocreate\Application\Service\Configurator\ConfiguratorRegistryInterface;
+use Ixocreate\Application\ConfiguratorRegistryInterface;
 use Ixocreate\Application\PackageInterface;
-use Ixocreate\Application\Service\Registry\ServiceRegistryInterface;
+use Ixocreate\Application\Service\ServiceRegistryInterface;
 use Ixocreate\ServiceManager\ServiceManagerInterface;
-use Ixocreate\Template\Bootstrap\TemplateBootstrapItem;
 
 final class Package implements PackageInterface
 {

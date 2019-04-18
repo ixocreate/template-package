@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Ixocreate\Template\Config;
 
 use Ixocreate\Application\Service\SerializableServiceInterface;
+use Ixocreate\Template\TemplateConfigurator;
 
 final class TemplateConfig implements SerializableServiceInterface
 {
