@@ -7,13 +7,13 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template\Package;
+namespace Ixocreate\Template\Package\Config;
 
-use Ixocreate\Application\ConfiguratorInterface;
-use Ixocreate\Application\ServiceRegistryInterface;
-use Ixocreate\Template\ExtensionInterface;
+use Ixocreate\Application\Service\Configurator\ConfiguratorInterface;
+use Ixocreate\Application\Service\Registry\ServiceRegistryInterface;
+use Ixocreate\Template\Package\ExtensionInterface;
 use Ixocreate\ServiceManager\Factory\AutowireFactory;
-use Ixocreate\ServiceManager\SubManager\SubManagerConfigurator;
+use Ixocreate\Application\Service\SubManagerConfigurator;
 use Ixocreate\Template\Package\Exception\InvalidDirectoryException;
 use Ixocreate\Template\Package\Extension\ExtensionMapping;
 use Ixocreate\Template\Package\Extension\ExtensionSubManager;
