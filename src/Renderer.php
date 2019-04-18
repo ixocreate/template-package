@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template;
+namespace Ixocreate\Package\Template;
 
 use Zend\Expressive\Template\TemplateRendererInterface;
 

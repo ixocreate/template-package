@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template\Exception;
+namespace Ixocreate\Package\Template\Exception;
 
 class InvalidDirectoryException extends \Exception
 {

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace Ixocreate\Template;
+namespace Ixocreate\Package\Template;
 
-use Ixocreate\ApplicationHttp\Middleware\MiddlewareConfigurator;
-use Ixocreate\Template\Middleware\TemplateMiddleware;
+use Ixocreate\Application\Http\Middleware\MiddlewareConfigurator;
+use Ixocreate\Package\Template\Middleware\TemplateMiddleware;
 
 /** @var MiddlewareConfigurator $middleware */
 $middleware->addMiddleware(TemplateMiddleware::class);
