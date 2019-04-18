@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Package\Template;
+namespace Ixocreate\Template\Package;
 
 use Zend\Diactoros\MessageTrait;
 use Zend\Diactoros\Response;

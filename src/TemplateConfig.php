@@ -7,9 +7,9 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Package\Template;
+namespace Ixocreate\Template\Package;
 
-use Ixocreate\Application\SerializableServiceInterface;
+use Ixocreate\Application\Service\SerializableServiceInterface;
 
 final class TemplateConfig implements SerializableServiceInterface
 {

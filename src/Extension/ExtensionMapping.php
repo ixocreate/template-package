@@ -7,9 +7,9 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Package\Template\Extension;
+namespace Ixocreate\Template\Package\Extension;
 
-use Ixocreate\Application\SerializableServiceInterface;
+use Ixocreate\Application\Service\SerializableServiceInterface;
 
 final class ExtensionMapping implements SerializableServiceInterface
 {

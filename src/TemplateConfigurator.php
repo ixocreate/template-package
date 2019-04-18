@@ -7,16 +7,16 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Package\Template;
+namespace Ixocreate\Template\Package;
 
 use Ixocreate\Application\ConfiguratorInterface;
 use Ixocreate\Application\ServiceRegistryInterface;
 use Ixocreate\Template\ExtensionInterface;
 use Ixocreate\ServiceManager\Factory\AutowireFactory;
 use Ixocreate\ServiceManager\SubManager\SubManagerConfigurator;
-use Ixocreate\Package\Template\Exception\InvalidDirectoryException;
-use Ixocreate\Package\Template\Extension\ExtensionMapping;
-use Ixocreate\Package\Template\Extension\ExtensionSubManager;
+use Ixocreate\Template\Package\Exception\InvalidDirectoryException;
+use Ixocreate\Template\Package\Extension\ExtensionMapping;
+use Ixocreate\Template\Package\Extension\ExtensionSubManager;
 
 final class TemplateConfigurator implements ConfiguratorInterface
 {
