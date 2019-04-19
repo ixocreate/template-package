@@ -12,7 +12,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "ixocreate/application": "dev-develop",
+        "ixocreate/application": "^0.1",
         "zendframework/zend-expressive-platesrenderer": "^2.0"
     },
     "require-dev": {
