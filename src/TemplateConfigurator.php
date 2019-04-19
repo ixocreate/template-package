@@ -15,6 +15,7 @@ use Ixocreate\Application\Service\SubManagerConfigurator;
 use Ixocreate\ServiceManager\Factory\AutowireFactory;
 use Ixocreate\Template\Config\TemplateConfig;
 use Ixocreate\Template\Exception\InvalidDirectoryException;
+use Ixocreate\Template\Extension\ExtensionInterface;
 use Ixocreate\Template\Extension\ExtensionMapping;
 use Ixocreate\Template\Extension\ExtensionSubManager;
 

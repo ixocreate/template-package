@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Ixocreate\Template;
+namespace Ixocreate\Template\Extension;
 
 interface ExtensionInterface
 {
