@@ -20,6 +20,7 @@ final class Renderer
 
     /**
      * Renderer constructor.
+     *
      * @param TemplateRendererInterface $renderer
      */
     public function __construct(TemplateRendererInterface $renderer)

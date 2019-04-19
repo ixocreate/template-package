@@ -9,12 +9,13 @@ declare(strict_types=1);
 
 namespace Ixocreate\Template;
 
-use Ixocreate\Contract\Application\ConfiguratorInterface;
-use Ixocreate\Contract\Application\ServiceRegistryInterface;
-use Ixocreate\Contract\Template\ExtensionInterface;
+use Ixocreate\Application\Configurator\ConfiguratorInterface;
+use Ixocreate\Application\Service\ServiceRegistryInterface;
+use Ixocreate\Application\Service\SubManagerConfigurator;
 use Ixocreate\ServiceManager\Factory\AutowireFactory;
-use Ixocreate\ServiceManager\SubManager\SubManagerConfigurator;
+use Ixocreate\Template\Config\TemplateConfig;
 use Ixocreate\Template\Exception\InvalidDirectoryException;
+use Ixocreate\Template\Extension\ExtensionInterface;
 use Ixocreate\Template\Extension\ExtensionMapping;
 use Ixocreate\Template\Extension\ExtensionSubManager;
 
@@ -40,7 +41,10 @@ final class TemplateConfigurator implements ConfiguratorInterface
      */
     public function __construct()
     {
-        $this->subManagerConfigurator = new SubManagerConfigurator(ExtensionSubManager::class, ExtensionInterface::class);
+        $this->subManagerConfigurator = new SubManagerConfigurator(
+            ExtensionSubManager::class,
+            ExtensionInterface::class
+        );
     }
 
     /**
@@ -111,7 +115,11 @@ final class TemplateConfigurator implements ConfiguratorInterface
         $extensionMapping = [];
         foreach ($factories as $id => $factory) {
             if (!\is_subclass_of($id, ExtensionInterface::class, true)) {
-                throw new \InvalidArgumentException(\sprintf("'%s' doesn't implement '%s'", $id, ExtensionInterface::class));
+                throw new \InvalidArgumentException(\sprintf(
+                    "'%s' doesn't implement '%s'",
+                    $id,
+                    ExtensionInterface::class
+                ));
             }
             $extensionName = \forward_static_call([$id, 'getName']);
             $extensionMapping[$extensionName] = $id;

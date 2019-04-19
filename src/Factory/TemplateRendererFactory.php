@@ -9,12 +9,12 @@ declare(strict_types=1);
 
 namespace Ixocreate\Template\Factory;
 
-use Ixocreate\Contract\ServiceManager\FactoryInterface;
-use Ixocreate\Contract\ServiceManager\ServiceManagerInterface;
+use Ixocreate\ServiceManager\FactoryInterface;
+use Ixocreate\ServiceManager\ServiceManagerInterface;
+use Ixocreate\Template\Config\TemplateConfig;
 use Ixocreate\Template\Extension\ExtensionMapping;
 use Ixocreate\Template\Extension\ExtensionSubManager;
 use Ixocreate\Template\Renderer;
-use Ixocreate\Template\TemplateConfig;
 use League\Plates\Engine;
 use Zend\Expressive\Plates\PlatesRenderer;
 
@@ -24,8 +24,8 @@ final class TemplateRendererFactory implements FactoryInterface
      * @param ServiceManagerInterface $container
      * @param $requestedName
      * @param array|null $options
-     * @throws \Psr\Container\ContainerExceptionInterface
      * @throws \Psr\Container\NotFoundExceptionInterface
+     * @throws \Psr\Container\ContainerExceptionInterface
      * @return mixed
      */
     public function __invoke(ServiceManagerInterface $container, $requestedName, array $options = null)

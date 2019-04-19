@@ -26,6 +26,7 @@ final class TemplateMiddleware implements MiddlewareInterface
 
     /**
      * TemplateMiddleware constructor.
+     *
      * @param Renderer $renderer
      */
     public function __construct(Renderer $renderer)
@@ -47,7 +48,11 @@ final class TemplateMiddleware implements MiddlewareInterface
     private function createHtmlResponse(TemplateResponse $templateResponse): HtmlResponse
     {
         return new HtmlResponse(
-            $this->renderer->render($templateResponse->getTemplate(), $templateResponse->getData(), $templateResponse->getGlobalData()),
+            $this->renderer->render(
+                $templateResponse->getTemplate(),
+                $templateResponse->getData(),
+                $templateResponse->getGlobalData()
+            ),
             $templateResponse->getStatusCode(),
             $templateResponse->getHeaders()
         );
