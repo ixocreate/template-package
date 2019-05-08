@@ -1,7 +1,7 @@
 # IXOCREATE Template Package
 
 [![Build Status](https://travis-ci.com/ixocreate/template-package.svg?branch=master)](https://travis-ci.com/ixocreate/template-package)
-[![Coverage Status](https://coveralls.io/repos/github/ixocreate/template-package/badge.svg?branch=develop)](https://coveralls.io/github/ixocreate/template-package?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/ixocreate/template-package/badge.svg?branch=master)](https://coveralls.io/github/ixocreate/template-package?branch=master)
 [![Packagist](https://img.shields.io/packagist/v/ixocreate/template-package.svg)](https://packagist.org/packages/ixocreate/template-package)
 [![PHP Version](https://img.shields.io/packagist/php-v/ixocreate/template-package.svg)](https://packagist.org/packages/ixocreate/template-package)
 [![License](https://img.shields.io/github/license/ixocreate/template-package.svg)](LICENSE)
