@@ -11,10 +11,10 @@ namespace Ixocreate\Template\Factory;
 
 use Ixocreate\ServiceManager\FactoryInterface;
 use Ixocreate\ServiceManager\ServiceManagerInterface;
-use Ixocreate\Template\Config\TemplateConfig;
 use Ixocreate\Template\Extension\ExtensionMapping;
 use Ixocreate\Template\Extension\ExtensionSubManager;
 use Ixocreate\Template\Renderer;
+use Ixocreate\Template\TemplateConfig;
 use League\Plates\Engine;
 use Zend\Expressive\Plates\PlatesRenderer;
 
