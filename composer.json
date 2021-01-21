@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": "^7.2 || ^8.0",
-        "ixocreate/application": "~0.3.0",
+        "ixocreate/application": "dev-dev-develop",
         "mezzio/mezzio-platesrenderer": "^2.2"
     },
     "require-dev": {
