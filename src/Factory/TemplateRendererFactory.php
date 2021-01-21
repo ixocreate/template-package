@@ -16,7 +16,7 @@ use Ixocreate\Template\Extension\ExtensionSubManager;
 use Ixocreate\Template\Renderer;
 use Ixocreate\Template\TemplateConfig;
 use League\Plates\Engine;
-use Zend\Expressive\Plates\PlatesRenderer;
+use Mezzio\Plates\PlatesRenderer;
 
 final class TemplateRendererFactory implements FactoryInterface
 {

@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Template;
 
-use Zend\Expressive\Template\TemplateRendererInterface;
+use Mezzio\Template\TemplateRendererInterface;
 
 final class Renderer
 {

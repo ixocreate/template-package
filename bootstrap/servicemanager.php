@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Ixocreate\Template;
 
-use Ixocreate\Application\Service\ServiceManagerConfigurator;
+use Ixocreate\Application\ServiceManager\ServiceManagerConfigurator;
 use Ixocreate\Template\Extension\ExtensionSubManager;
 use Ixocreate\Template\Factory\TemplateRendererFactory;
 

@@ -9,9 +9,9 @@ declare(strict_types=1);
 
 namespace Ixocreate\Template;
 
-use Zend\Diactoros\MessageTrait;
-use Zend\Diactoros\Response;
-use Zend\Diactoros\Stream;
+use Laminas\Diactoros\MessageTrait;
+use Laminas\Diactoros\Response;
+use Laminas\Diactoros\Stream;
 
 final class TemplateResponse extends Response
 {

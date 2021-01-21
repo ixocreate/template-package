@@ -11,11 +11,11 @@ namespace Ixocreate\Template\Middleware;
 
 use Ixocreate\Template\Renderer;
 use Ixocreate\Template\TemplateResponse;
+use Laminas\Diactoros\Response\HtmlResponse;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Zend\Diactoros\Response\HtmlResponse;
 
 final class TemplateMiddleware implements MiddlewareInterface
 {
