@@ -23,7 +23,7 @@ class PackageTest extends TestCase
         $package = new Package();
 
         $this->assertSame([TemplateBootstrapItem::class], $package->getBootstrapItems());
-        $this->assertNull($package->getDependencies());
         $this->assertDirectoryExists($package->getBootstrapDirectory());
+        $this->assertEmpty($package->getDependencies());
     }
 }
