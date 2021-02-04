@@ -1,4 +1,9 @@
 <?php
+/**
+ * @link https://github.com/ixocreate
+ * @copyright IXOLIT GmbH
+ * @license MIT License
+ */
 
 declare(strict_types=1);
 
@@ -52,7 +57,7 @@ class TemplateMiddlewareTest extends TestCase
             'data' => 'value',
         ];
         $globalData = [
-            'globalData' => 'otherValue'
+            'globalData' => 'otherValue',
         ];
 
         $renderer = $this->createMock(Renderer::class);
