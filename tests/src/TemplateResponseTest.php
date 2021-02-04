@@ -10,8 +10,8 @@ declare(strict_types=1);
 namespace Ixocreate\Test\Template;
 
 use Ixocreate\Template\TemplateResponse;
+use Laminas\Diactoros\Response;
 use PHPUnit\Framework\TestCase;
-use Zend\Diactoros\Response;
 
 /**
  * @covers \Ixocreate\Template\TemplateResponse

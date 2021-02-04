@@ -19,9 +19,14 @@ use Ixocreate\Template\Factory\TemplateRendererFactory;
 use Ixocreate\Template\Renderer;
 use Ixocreate\Template\TemplateConfig;
 use Ixocreate\Template\TemplateConfigurator;
+use Mezzio\Template\TemplateRendererInterface;
 use PHPUnit\Framework\TestCase;
-use Zend\Expressive\Template\TemplateRendererInterface;
 
+/**
+ * Class TemplateTest
+ * @package Ixocreate\Test\Template
+ * @covers \League\Plates\Template\Template
+ */
 class TemplateTest extends TestCase
 {
     /**

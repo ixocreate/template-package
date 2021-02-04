@@ -34,8 +34,8 @@ final class TemplateRendererFactory implements FactoryInterface
         $templateConfig = $container->get(TemplateConfig::class);
 
         $plates = new Engine();
-        $plates->setFileExtension($templateConfig->getFileExtension());
-        foreach ($templateConfig->getDirectories() as $templateDirectory) {
+        $plates->setFileExtension($templateConfig->fileExtension());
+        foreach ($templateConfig->directories() as $templateDirectory) {
             $plates->addFolder($templateDirectory['name'], $templateDirectory['directory']);
         }
 

@@ -17,32 +17,14 @@ final class TemplateConfig implements SerializableServiceInterface
      * @var array
      */
     private $config = [
-        'fileExtension' => 'phtml',
-        'directories' => [],
+        'fileExtension',
+        'directories',
     ];
 
     public function __construct(TemplateConfigurator $templateConfigurator)
     {
         $this->config['fileExtension'] = $templateConfigurator->getFileExtension();
         $this->config['directories'] = $templateConfigurator->getDirectories();
-    }
-
-    /**
-     * @return string
-     * @deprecated
-     */
-    public function getFileExtension(): string
-    {
-        return $this->config['fileExtension'];
-    }
-
-    /**
-     * @return array
-     * @deprecated
-     */
-    public function getDirectories(): array
-    {
-        return $this->config['directories'];
     }
 
     /**
